@@ -8,7 +8,7 @@ public class Program
         Queue queue = new Queue();
         Console.WriteLine("WELCOME IN THE STACK AND QUEUE");
         bool check = true;
-        Console.WriteLine(" 1. push \n 2. IS_EMPTY \n 3. peek \n 4. pop \n 5. Display stack \n 6.Enqueue \n 7.Display Queue \n 8. end");
+        Console.WriteLine(" 1. push \n 2. IS_EMPTY \n 3. peek \n 4. pop \n 5. Display stack \n 6.Enqueue \n 7.dequeue \n 8.Display queue \n 9.end");
         while (check)
         {
             Console.WriteLine(" **** ENTER THE ABOVE OPTION TO EXECUTE THE METHODS *****");
@@ -39,9 +39,12 @@ public class Program
                     queue.Enqueue(70);
                     break;
                 case 7:
-                    queue.DisplayQueue();
+                    queue.Dequeue();
                     break;
                 case 8:
+                    queue.DisplayQueue();
+                    break;
+                case 9:
                     check = false;
                     break;
             }
