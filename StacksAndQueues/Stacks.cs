@@ -63,7 +63,7 @@ namespace StacksAndQueues
                 Pop();
             }
         }
-        internal void Display()
+        internal void DisplayStack()
         {
             Node temp = this.top;
             while (temp != null)
